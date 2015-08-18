@@ -36,4 +36,9 @@ cacheSolve <- function(cacheinput.matrix, ...) {
           return(invertedMatrix)
         }
         
+        inp <- cacheinput.matrix$get()
+        oup <- solve(inp)
+        inp$set.inverse(oup)
+        oup
+        
 }
