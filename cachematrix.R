@@ -19,9 +19,21 @@ get <- function() inputMatrix
 set.inverse <- function(solve) invertedMatrix <<- solve
 get.inverse <- function() invertedMatrix
 
+list(
+set = set,
+get = get,
+set.inverse = set.inverse,
+get.inverse = get.inverse)
+
 ## Write a short comment describing this function
 
-cacheSolve <- function(x, ...) {
+cacheSolve <- function(cacheinput.matrix, ...) {
         ## Return a matrix that is the inverse of 'x'
+        
+        invertedMatrix = cacheinput.matrix$get.inverse()
+        if(!is.null()){
+          message("inverted the matrix")
+          return(invertedMatrix)
+        }
         
 }
