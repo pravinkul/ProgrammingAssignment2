@@ -2,6 +2,7 @@
 ## functions do
 
 ## Write a short comment describing this function
+## This function defines the cache matrix for inversion. It defines the get and set functions for inversing
 
 makeCacheMatrix <- function(inputMatrix = matrix()) {
       if(!is.matrix(inputMatrix)){
@@ -26,6 +27,7 @@ set.inverse = set.inverse,
 get.inverse = get.inverse)
 
 ## Write a short comment describing this function
+# This function does the inverse of the input matrix and returns the inversed matrix
 
 cacheSolve <- function(cacheinput.matrix, ...) {
         ## Return a matrix that is the inverse of 'x'
